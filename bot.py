@@ -10,18 +10,18 @@ TOKEN = '7929715633:AAGTuiSgJ-VVkEtF-8SkDCAGt40vMIq5MDs'
 bot = telebot.TeleBot(TOKEN)
 
 # Allowed user (your Telegram username without '@')
-ALLOWED_USER = 'i_am_yamraj'
+ALLOWED_USER = 'xaltrix'
 
 # Channel configuration - setting default channel ID
 channel_config = {
     'enabled': True,  # Enable autoposting by default
-    'channel_id': -1002470039055  # Your channel ID
+    'channel_id': -1002491007435  # Your channel ID
 }
 
 def is_user_allowed(message):
     user = bot.get_chat(message.chat.id)
     if user.username != ALLOWED_USER:
-        bot.send_message(message.chat.id, "This is a personal bot. If you want to make your own bot, please contact the developer @i_am_yamraj.")
+        bot.send_message(message.chat.id, "This is a personal bot. If you want to make your own bot, please contact the developer @xaltrix.")
         return False
     return True
 
